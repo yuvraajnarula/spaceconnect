@@ -115,3 +115,21 @@ body{
     .nav a:hover{
         color: var(--color-5);
     }
+.register-form
+{
+    margin-top: 10em;
+    margin-left: 20em;
+    position: absolute;
+    width: 45%;
+    background: var(--color-1);
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+fieldset{
+    border: none;
+    width: 100%;
+    padding: 20px;
+}
+.log{
+    padding: 20px;
+}

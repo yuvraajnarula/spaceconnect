@@ -17,13 +17,22 @@
     </div>
     <nav class="nav">
         <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
         </ul>
     </nav>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{category}}">
+                        {{message}}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
     {% block content %}
     {% endblock %}
 </body>
