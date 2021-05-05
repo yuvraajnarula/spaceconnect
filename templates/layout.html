@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" >
     <link rel="icon" href="https://media.discordapp.net/attachments/741244174736556076/839414477920796702/icon.png">
 </head>
-<body> 
+<body>
     <div class="nav-toggle">
         <div class="nav-toggle-bar"></div>
     </div>
@@ -24,9 +24,8 @@
         <li><a href="#">Register</a></li>
         </ul>
     </nav>
-<div class="home">
-    
-</div>
+    {% block content %}
+    {% endblock %}
 </body>
 <script src="{{url_for('static',filename='app.js')}}"></script>
 </html>

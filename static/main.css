@@ -13,6 +13,7 @@
 }
 body{
     background: var(--color-2);
+    color: var(--color-4);
 }
 .home{
     height: 100vh;
