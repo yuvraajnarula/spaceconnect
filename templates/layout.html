@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaceconnect | Home </title>
-    <link rel="stylesheet" href="" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" >
     <link rel="icon" href="https://media.discordapp.net/attachments/741244174736556076/839414477920796702/icon.png">
 </head>
-<body>
-    
+<div class="home">
+    <div class="nav-toggle">
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="nav">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        </ul>
+    </nav>
+</div>
 </body>
+<script src="{{url_for('static',filename='app.js')}}"></script>
 </html>
