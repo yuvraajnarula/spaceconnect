@@ -1,5 +1,15 @@
-from spaceconnect import db
-class User(db.Model):
+from spaceconnect import db , loginManager
+from flask_login import UserMixin
+
+
+@loginManager.user_loader
+
+def loadUser(user_id):
+    return User.query.get(int())
+
+
+
+class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
