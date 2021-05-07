@@ -85,3 +85,72 @@ li a:hover:not(.active) {
 .para-div li:nth-child(2){
    margin-top: 5em;
 }
+img{
+    border-radius: 100%;
+}
+.content-section{
+    height: 90vh;
+    padding-top: 10em;
+}
+form{
+    width: 65vh;
+    height: 50vh;
+    margin-left: 18em;
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    background: #000;
+    box-shadow: 0 0 10px 10px  rgba(0,0,0,0.5);
+}
+form a{
+    color: #b83d57;
+    text-decoration: none;
+    font-weight: 700;
+}
+.form-check{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+fieldset{
+    border: none;
+    padding: 10px;
+    margin-top: 50px;
+}
+.form-control-label{
+    float: right;
+    padding-top: 12.5px;
+}
+.form-control{
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.btn{
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    background: #b83d57;
+    margin-bottom: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.text{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+form legend{
+    font-size: 24px;
+    font-weight: 800;
+    color: #b83d57;
+}
+footer{
+    border-top: 2px solid #eee;
+    padding:20px;
+}
+footer h6{
+    font-size: 14px;
+}
+footer i {
+    color: #b83d57;
+}
