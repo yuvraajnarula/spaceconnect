@@ -9,26 +9,25 @@
     {% else %}
         <title>SpaceConnect</title>
     {% endif %}
-    <link rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://media.discordapp.net/attachments/741244174736556076/839414477920796702/icon.png">
 </head>
 <body>
     <header class="site-header">
-      <nav class="navbar">
-        <div class="nav-div">
-          <a class="navbar-brand mr-4" href="/">SpaceConnect</a>
-              <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
-              <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
-
-              {% if current_user.is_authenticated %}
-                <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
-                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
-              {% else %}
-                <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
-                <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
-              {% endif %}
-        </div>
-      </nav>
-      </header>
+      <ul class="navbar">
+      <li><a  href="{{ url_for('home') }}">Home</a>
+      <li><a href="{{ url_for('about') }}">Missions</a>
+      {% if current_user.is_authenticated %}
+        <li><a href="">Apply</a></li>
+        <li><a   href="{{ url_for('account') }}">Account</a>
+        <li><a  href="{{ url_for('logout') }}">Logout</a>
+      {% else %}
+      <li><a  href="{{ url_for('login') }}">Login</a>
+      <li><a  href="{{ url_for('register') }}">Register</a>
+      {% endif %}
+      </ul>
+</header>
       {% block content %}{% endblock %}
 </body>
 </html>
