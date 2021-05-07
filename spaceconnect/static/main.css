@@ -145,12 +145,25 @@ form legend{
     color: #b83d57;
 }
 footer{
+    bottom: 0;
     border-top: 2px solid #eee;
-    padding:20px;
+    padding:10px;
 }
 footer h6{
     font-size: 14px;
 }
 footer i {
     color: #b83d57;
+}
+.missions{
+    padding-top: 6.5rem;
+}
+.missions-hr{
+    width: 30%;
+}
+.mission-hr-1{
+    width: 85%;
+}
+.mission-1{
+    height: 45vh;
 }
