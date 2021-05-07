@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding:0;
+    transition: all 0.5s;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -28,7 +29,6 @@ ul {
     list-style-type: none;
     padding: 10px;
     overflow: hidden;
-    background-color: #333;
     z-index: 10;
 }
  
@@ -47,12 +47,13 @@ li a:hover:not(.active) {
     position: absolute;
     margin-top: -15em;
     margin-left: 22.5em;
+    padding-left: 10px;
 }
 .c{
     height: 100vh;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   ::-webkit-scrollbar-track {
     background: transparent;
@@ -65,3 +66,22 @@ li a:hover:not(.active) {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
+  .c h1{
+      margin-left: 2.5em;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 500;
+  }
+.hr{
+    margin-top: 1rem;
+    margin-left: 5em;
+    width: 10%;
+}
+.para-div{
+    display: flex;
+}
+.para-div li:first-child{
+    margin-left: 1em;
+}
+.para-div li:nth-child(2){
+   margin-top: 5em;
+}
