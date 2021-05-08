@@ -22,7 +22,6 @@
       <li><a href="{{ url_for('about') }}">Missions</a>
       {% if current_user.is_authenticated %}
         <li><a href="">Apply</a></li>
-        <li><a   href="{{ url_for('account') }}">Account</a>
         <li><a  href="{{ url_for('logout') }}">Logout</a>
       {% else %}
       <li><a  href="{{ url_for('login') }}">Login</a>
