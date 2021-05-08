@@ -49,7 +49,7 @@ li a:hover:not(.active) {
     margin-left: 22.5em;
     padding-left: 10px;
 }
-.c{
+.about{
     height: 100vh;
 }
 ::-webkit-scrollbar {
@@ -66,7 +66,7 @@ li a:hover:not(.active) {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  .c h1{
+  .about h1{
       margin-left: 2.5em;
       font-family: 'Noto Sans JP', sans-serif;
       font-weight: 500;
@@ -85,7 +85,7 @@ li a:hover:not(.active) {
 .para-div li:nth-child(2){
    margin-top: 5em;
 }
-img{
+.img img{
     border-radius: 100%;
 }
 .content-section{
@@ -166,4 +166,26 @@ footer i {
 }
 .mission-1{
     height: 45vh;
+}
+.aim-content{
+    list-style: none;
+    display: flex;
+}
+.aim-content li:first-child{
+    margin-top: 35px;
+    margin-left: 2.5em;
+}
+.aim-content li:nth-child(2){
+    margin-right: 2.5em;
+}
+.aim h1{
+    margin-left: 22em;
+    margin-top: -2rem;
+}
+.aim hr{
+    width: 17.5%;
+    margin-left:46.5em;
+}
+.aim{
+    height: 80vh;
 }
