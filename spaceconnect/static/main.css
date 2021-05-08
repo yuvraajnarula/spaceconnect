@@ -287,3 +287,14 @@ footer i {
       transform: rotate(360deg);
     }
   }
+  .counter-container{
+       text-align: center;
+  }
+  .counter-container ul {
+      margin-left: 20em;
+  }
+  .counter-container p{
+      color: #b83d57;
+      font-size: 12px;
+      font-weight: 800;
+  }

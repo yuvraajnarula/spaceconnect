@@ -38,7 +38,7 @@
             <ul class="para-div">
                 <li>
                     <div class="img">
-                    <img src="https://media.discordapp.net/attachments/741244174736556076/840292847370502164/unknown.png" alt="earth">
+                    <img src="https://media.discordapp.net/attachments/741244174736556076/840628119818862602/unknown.png" alt="earth">
                     </div>
                 </li>
                 <li>
@@ -47,7 +47,21 @@
                     </p>
                 </li>
             </ul>
-            
     </div>
     <br>
+    <div class="counter-container">
+        <h3 id="headline"><i>Mission 3</i> to be announced in: </h3>
+        <br>
+        <br>
+        <p>This will give our organisation a huge boost and jump and will give our candidates/applicants a broader mindset for future campaigns </p>
+        <div id="countdown">
+            <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+            </ul>
+        </div>
+        <br>
+    </div>
+    <script src="{{url_for('static', filename='counter.js')}}"></script>
 {% endblock content %}
