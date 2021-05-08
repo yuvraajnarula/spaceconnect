@@ -173,11 +173,8 @@ footer i {
 .missions-hr{
     width: 30%;
 }
-.mission-hr-1{
-    width: 85%;
-}
 .mission-1{
-    height: 65vh;
+    height: 100vh;
 }
 .aim-content{
     list-style: none;
@@ -201,7 +198,6 @@ footer i {
 .aim{
     height: 80vh;
 }
-.curved-div svg {
-    display: block;
-  }
-  
+.mission-1 h4{
+    margin-left: 5em;
+}
