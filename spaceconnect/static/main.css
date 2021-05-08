@@ -18,8 +18,10 @@ body{
 .navbar{
     position: fixed;
     background: #b83d57;
-    width: 100%;
+    width: 160vh;
     height: 10vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .navbar a{
     color: #eee;
@@ -92,7 +94,17 @@ li a:hover:not(.active) {
     height: 90vh;
     padding-top: 10em;
 }
-form{
+.form-1{
+    width: 65vh;
+    height: 60vh;
+    margin-left: 18em;
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    background: #000;
+    box-shadow: 0 0 10px 10px  rgba(0,0,0,0.5);
+}
+.form-2{
     width: 65vh;
     height: 50vh;
     margin-left: 18em;
@@ -165,7 +177,7 @@ footer i {
     width: 85%;
 }
 .mission-1{
-    height: 45vh;
+    height: 65vh;
 }
 .aim-content{
     list-style: none;
@@ -189,3 +201,7 @@ footer i {
 .aim{
     height: 80vh;
 }
+.curved-div svg {
+    display: block;
+  }
+  
