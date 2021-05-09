@@ -55,8 +55,3 @@ def logout():
 @login_required
 def apply():
     return render_template('apply.html', title='Apply')
-
-@app.route('/account')
-@login_required
-def account():
-    return render_template('account.html', title='Account')
