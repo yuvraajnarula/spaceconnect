@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField,IntegerField, RadioField,TextAreaField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from spaceconnect.models import User
 
@@ -31,3 +31,9 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
+class ApplyForm(FlaskForm):
+    fullname = StringField('Fullname', validators=[DataRequired(), Length(min=5,max=30)])
+    age = IntegerField('Age', validators=[DataRequired()])
+    mission = RadioField('Which mission would you prefer', choices=[('value','Mission 1'),('value', 'Mission 2')], validators= [DataRequired()])
+    content = TextAreaField('Describe your abilities', validators=[DataRequired(), Length(max=100)])
+    apply = SubmitField('Apply')

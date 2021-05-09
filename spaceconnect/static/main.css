@@ -298,3 +298,10 @@ footer i {
       font-size: 12px;
       font-weight: 800;
   }
+  .form-3{
+      height: 65vh;
+      width: 70vh;
+      background: #000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 10px  rgba(0,0,0,0.5);
+  }

@@ -1,6 +1,6 @@
 from flask import render_template, url_for, flash, redirect, request
 from spaceconnect import app, db, bcrypt
-from spaceconnect.forms import RegistrationForm, LoginForm
+from spaceconnect.forms import RegistrationForm, LoginForm ,ApplyForm
 from spaceconnect.models import User
 from flask_login import login_user, current_user, logout_user, login_required
 @app.route("/")
@@ -24,7 +24,7 @@ def register():
         user = User(username=form.username.data, email=form.email.data, password=hashed_password)
         db.session.add(user)
         db.session.commit()
-        flash('Your account has been created! You are now able to log in', 'success')
+        flash('Your account has been created! You are now able to log in')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
@@ -41,7 +41,7 @@ def login():
             next_page = request.args.get('next')
             return redirect(next_page) if next_page else redirect(url_for('home'))
         else:
-            flash('Login Unsuccessful. Please check email and password', 'danger')
+            flash('Login Unsuccessful. Please check email and password')
     return render_template('login.html', title='Login', form=form)
 
 
@@ -51,10 +51,15 @@ def logout():
     return redirect(url_for('home'))
 
 
-@app.route("/apply")
+@app.route("/apply", methods=['GET', 'POST'])
 @login_required
 def apply():
-    return render_template('apply.html', title='Apply')
+    form = ApplyForm()
+    if form.validate_on_submit():
+        flash('Your application submitted successfully!')
+        return redirect(url_for('home'))
+    return render_template('apply.html', title='Apply',form=form)
 @app.route('/admin')
 def admin():
-    return render_template('admin.html')
+
+    return render_template('admin.html', title='Admin')
