@@ -55,3 +55,6 @@ def logout():
 @login_required
 def apply():
     return render_template('apply.html', title='Apply')
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
