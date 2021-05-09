@@ -56,6 +56,7 @@ def logout():
 def apply():
     form = ApplyForm()
     if form.validate_on_submit():
+        
         flash('Your application submitted successfully!')
         return redirect(url_for('home'))
     return render_template('apply.html', title='Apply',form=form)

@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding:0;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -91,7 +91,7 @@ li a:hover:not(.active) {
     border-radius: 100%;
 }
 .content-section{
-    height: 90vh;
+    height:90vh;
     padding-top: 10em;
 }
 .form-1{
@@ -298,10 +298,56 @@ footer i {
       font-size: 12px;
       font-weight: 800;
   }
-  .form-3{
-      height: 65vh;
+.form-3{
+      height: 95vh;
       width: 70vh;
       background: #000;
       border-radius: 10px;
-      box-shadow: 0 0 10px 10px  rgba(0,0,0,0.5);
-  }
+      box-shadow: 0 0 10px 10px  rgba(0,0,0,0.5);    
+      padding: 10px;
+      margin-top: -2rem;
+      margin-left: 15em;
+      padding-bottom: 20px;
+}
+.form-3 legend{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.form-3 .form-control-label{
+    float: left;
+}
+.form-3 .fullname .form-control-label{
+    padding-right: 8.5rem;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.form-3 .age .form-control-label{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10.77rem;
+}
+.form-3 .btn{
+    margin-left: 21.5rem;
+}
+.form-3 .mission-option .form-control-label{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.form-3 .description{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.form-3 .description .form-control{
+    width: 350px;
+    height: 50px;
+}
+.form-3 textarea{
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+}
+.apply-form{
+    height: 110vh;
+    padding-top: 10em;
+}
