@@ -1,7 +1,7 @@
 from flask import render_template, url_for, flash, redirect, request
 from spaceconnect import app, db, bcrypt
 from spaceconnect.forms import RegistrationForm, LoginForm ,ApplyForm
-from spaceconnect.models import User
+from spaceconnect.models import User, Apply
 from flask_login import login_user, current_user, logout_user, login_required
 @app.route("/")
 @app.route("/home")
@@ -56,11 +56,14 @@ def logout():
 def apply():
     form = ApplyForm()
     if form.validate_on_submit():
-        
+        apply = Apply(fullname = form.fullname.data, age = form.age.data, content = form.content.data, email = current_user)
+        db.session.add(apply)
+        db.session.commit()
         flash('Your application submitted successfully!')
         return redirect(url_for('home'))
     return render_template('apply.html', title='Apply',form=form)
 @app.route('/admin')
 def admin():
+    candidates = Apply.query.all()
 
-    return render_template('admin.html', title='Admin')
+    return render_template('admin.html', title='Admin', candidates=candidates)

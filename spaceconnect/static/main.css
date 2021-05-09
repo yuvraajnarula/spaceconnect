@@ -299,14 +299,14 @@ footer i {
       font-weight: 800;
   }
 .form-3{
-      height: 95vh;
+      height: 80vh;
       width: 70vh;
       background: #000;
       border-radius: 10px;
       box-shadow: 0 0 10px 10px  rgba(0,0,0,0.5);    
       padding: 10px;
       margin-top: -2rem;
-      margin-left: 15em;
+      margin-left: 17.5em;
       padding-bottom: 20px;
 }
 .form-3 legend{
@@ -334,6 +334,9 @@ footer i {
     padding-left: 10px;
     padding-bottom: 5px;
     padding-right: 10px;
+}
+.form-3 .mission-option .form-control{
+    margin-left: 10px;
 }
 .form-3 .description{
     padding-left: 10px;

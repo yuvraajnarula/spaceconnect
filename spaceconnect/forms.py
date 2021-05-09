@@ -31,9 +31,10 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
+    
 class ApplyForm(FlaskForm):
     fullname = StringField('Fullname', validators=[DataRequired(), Length(min=5,max=30)])
     age = IntegerField('Age', validators=[DataRequired()])
-    mission = RadioField('Which mission would you prefer', choices=[('value','Mission 1'),('value', 'Mission 2')], validators= [DataRequired()])
+    mission = StringField('Which mission would you prefer(Mission 1 or 2)', validators= [DataRequired()])
     content = TextAreaField('Describe your abilities', validators=[DataRequired(), Length(max=100)])
     apply = SubmitField('Apply')
