@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-
+    <link rel="icon" href="https://media.discordapp.net/attachments/741244174736556076/839414477920796702/icon.png">
     {% if title %}
-        <title>SpaceConnect - {{ title }}</title>
+        <title>SpaceConnect | {{ title }}</title>
     {% else %}
         <title>SpaceConnect</title>
     {% endif %}
@@ -21,7 +21,7 @@
     <li><a  href="{{ url_for('home') }}">Home</a>
     <li><a href="{{ url_for('about') }}">Missions</a>
     {% if current_user.is_authenticated %}
-      <li><a href="{{url_for('new_post')}}">Apply</a></li>
+      <li><a href="{{url_for('apply')}}">Apply</a></li>
       <li><a  href="{{ url_for('logout') }}">Logout</a>
       <li style="cursor:pointer;">Hi {{ current_user.username }}</a></li>
     {% else %}
