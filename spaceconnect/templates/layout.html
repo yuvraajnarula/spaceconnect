@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
     {% if title %}
-        <title>SpaceConnect | {{ title }}</title>
+        <title>SpaceConnect - {{ title }}</title>
     {% else %}
         <title>SpaceConnect</title>
     {% endif %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://media.discordapp.net/attachments/741244174736556076/839414477920796702/icon.png">
 </head>
 <body>
-    </div>
-    <header class="site-header">
-      <ul class="navbar">
-      <li><a  href="{{ url_for('home') }}">Home</a>
-      <li><a href="{{ url_for('about') }}">Missions</a>
-      {% if current_user.is_authenticated %}
-        <li><a href="{{url_for('apply')}}">Apply</a></li>
-        <li><a  href="{{ url_for('logout') }}">Logout</a>
-        <li style="cursor:pointer;">Hi {{ current_user.username }}</a></li>
-      {% else %}
-      <li><a  href="{{ url_for('login') }}">Login</a>
-      <li><a  href="{{ url_for('register') }}">Register</a>
-      {% endif %}
-      </ul>
+  <header class="site-header">
+    <ul class="navbar">
+    <li><a  href="{{ url_for('home') }}">Home</a>
+    <li><a href="{{ url_for('about') }}">Missions</a>
+    {% if current_user.is_authenticated %}
+      <li><a href="{{url_for('new_post')}}">Apply</a></li>
+      <li><a  href="{{ url_for('logout') }}">Logout</a>
+      <li style="cursor:pointer;">Hi {{ current_user.username }}</a></li>
+    {% else %}
+    <li><a  href="{{ url_for('login') }}">Login</a>
+    <li><a  href="{{ url_for('register') }}">Register</a>
+    {% endif %}
+    </ul>
   </header>
-      {% block content %}{% endblock %}
-    <footer>
-      <center>
-      <h6>Made with <i class="fa fa-heart"></i> by Yuvraaj Narula</h6>
-    </center>
-    </footer>
-    </body>
+    {% block content %}{% endblock %}
+  <footer>
+    <center>
+    <h6>Made with <i class="fa fa-heart"></i> by Yuvraaj Narula</h6>
+  </center>
+  </footer>
+</body>
 </html>

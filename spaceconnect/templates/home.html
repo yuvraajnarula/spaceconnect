@@ -1,57 +1,57 @@
 {% extends "layout.html" %}
-{% block content %} 
-<div class="landing">
-    <div class="svg-container">
-        <svg viewbox="0 0 800 400" class="svg">
-          <path id="curve" fill="#b83d57" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
-          </path>
-        </svg>
-        <h1>Space Connect</h1>
-        <br>
-        <q>To achieve infinity and beyond</q>
-      </div>
-</div>
-<div class="about">
-    <h1>
-        About Us
-    </h1>
-    <hr class="hr">
-    <ul class="para-div">
-        <li>
-            <div class="img">
-            <img src="https://media.discordapp.net/attachments/741244174736556076/840285035970297936/unknown.png" alt="earth">
-            </div>
-        </li>
-        <li>
-            <p>
-                In 2050, Space X and Nasa signed a treaty in which they completed many missions together, with help of UN they created a body in which space organisations of many countries participated like ISRO, CNES, etc. and now we are almost there to achieve the milestone that we dreamt of <b> <i> 'COLONIZATION IN MARS'</b></i>. We are an organsization which works directly under this body, we are here to recruit people who are bold, have leadership qualities and are ambitious to carry out missions and volunteer astronauts, astronomers, other scientist and faculty. 
-            </p>
-        </li>
-    </ul>
-    
-</div>
-<div class="aim">
-    <h1>
-        What's our goal?
-    </h1>
-    <br>
-    <hr>
-    <br>
-    <ul class="aim-content">
-        <li>
-             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis quibusdam inventore. Fugiat omnis consequuntur, voluptatibus, magnam repudiandae magni porro vitae esse qui illum numquam aliquid error sint aliquam recusandae?
-            </p>
-        </li>
-        <li>
-            <img src="https://media.discordapp.net/attachments/741244174736556076/840476092321759242/unknown.png" alt="earth" >
-        </li>
-    </ul>
-
-</div>
-<center>
-<small style="color: #b83d57; font-weight: 800;">Judges can see Form responses(Mission) by going here <a href='{{url_for("admin")}}' style="color: white; text-decoration: none;">Response</a></small>
-</center>
-<br>
-<script src="{{url_for('static', filename='app.js')}}"></script>
+{% block content %}
+    <div class="landing">
+      <div class="svg-container">
+          <svg viewbox="0 0 800 400" class="svg">
+            <path id="curve" fill="#b83d57" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+            </path>
+          </svg>
+          <h1>Space Connect</h1>
+          <br>
+          <q>To achieve infinity and beyond</q>
+        </div>
+  </div>
+  <div class="about">
+      <h1>
+          About Us
+      </h1>
+      <hr class="hr">
+      <ul class="para-div">
+          <li>
+              <div class="img">
+              <img src="https://media.discordapp.net/attachments/741244174736556076/840285035970297936/unknown.png" alt="earth">
+              </div>
+          </li>
+          <li>
+              <p>
+                  In 2050, Space X and Nasa signed a treaty in which they completed many missions together, with help of UN they created a body in which space organisations of many countries participated like ISRO, CNES, etc. and now we are almost there to achieve the milestone that we dreamt of <b> <i> 'COLONIZATION IN MARS'</b></i>. We are an organsization which works directly under this body, we are here to recruit people who are bold, have leadership qualities and are ambitious to carry out missions and volunteer astronauts, astronomers, other scientist and faculty. 
+              </p>
+          </li>
+      </ul>
+      
+  </div>
+  <div class="aim">
+      <h1>
+          What's our goal?
+      </h1>
+      <br>
+      <hr>
+      <br>
+      <ul class="aim-content">
+          <li>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis quibusdam inventore. Fugiat omnis consequuntur, voluptatibus, magnam repudiandae magni porro vitae esse qui illum numquam aliquid error sint aliquam recusandae?
+              </p>
+          </li>
+          <li>
+              <img src="https://media.discordapp.net/attachments/741244174736556076/840476092321759242/unknown.png" alt="earth" >
+          </li>
+      </ul>
+  
+  </div>
+  <center>
+  <small style="color: #b83d57; font-weight: 800;">Judges can see Form responses(Mission) by going here <a href='{{url_for("admin")}}' style="color: white; text-decoration: none;">Response</a></small>
+  </center>
+  <br>
+  <script src="{{url_for('static', filename='app.js')}}"></script>
 {% endblock content %}

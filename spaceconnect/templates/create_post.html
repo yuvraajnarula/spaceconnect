@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="apply-form">
+    <form class="form-3" method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group" >
+            <legend >Induction Form</legend>
+            <div class="form-group fullname">
+                {{ form.title.label(class="form-control-label") }}
+
+                {% if form.title.errors %}
+                    {{ form.title(class="form-control") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.title.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.title(class="form-control") }}
+                {% endif %}
+            </div>
+            <div class="form-group description">
+                {{ form.content.label(class="form-control-label") }}
+
+                {% if form.content.errors %}
+                    {{ form.content(class="form-control") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.content.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                <br><br>
+                    {{ form.content(class="form-control") }}
+                {% endif %}
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn") }}
+        </div>
+        <br>
+        <hr class="form-hr">
+        <br>
+        <div>
+            <small class="text">
+                We will be announcing teams soon !!
+            </small>
+        </div>
+    </form>
+</div>
+{% endblock content %}
