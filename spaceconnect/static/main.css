@@ -354,3 +354,19 @@ footer i {
   height: 110vh;
   padding-top: 10em;
 }
+.admin-panel h1{
+  padding-top: 4em;
+}
+.admin-panel hr{
+  width: 30%;
+}
+.admin-panel .admin-response
+{
+  height: 100vh;
+  width: 90%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
