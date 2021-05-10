@@ -299,7 +299,7 @@ footer i {
     font-weight: 800;
 }
 .form-3{
-    height: 80vh;
+    height: 60vh;
     width: 70vh;
     background: #000;
     border-radius: 10px;
@@ -343,7 +343,7 @@ footer i {
   padding-bottom: 5px;
 }
 .form-3 .description .form-control{
-  width: 350px;
+  width: 370px;
   height: 50px;
 }
 .form-3 textarea{
