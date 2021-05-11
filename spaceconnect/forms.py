@@ -37,5 +37,5 @@ class LoginForm(FlaskForm):
 
 class PostForm(FlaskForm):
     title = StringField('Fullname', validators=[DataRequired()])
-    content = TextAreaField('Describe Yourself', validators=[DataRequired()])
+    content = TextAreaField('Describe your abilities for the missions listed:', validators=[DataRequired()])
     submit = SubmitField('Apply')
