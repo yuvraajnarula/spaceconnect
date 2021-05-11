@@ -71,4 +71,4 @@ def apply():
 @app.route('/admin')
 def admin():
     posts = Post.query.all()
-    return render_template('admin.html', title='Admin',posts= posts)
+    return render_template('admin.html', title='Form Response',posts= posts)
