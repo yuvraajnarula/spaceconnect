@@ -381,3 +381,19 @@ footer i {
   font-weight: 800;
   margin-bottom : 5px;
 }
+.success{
+  padding:10px;
+  border-radius:10px;
+  border: 2px solid #05b56f;
+  background: #5db390;
+  color: #000;
+  font-weight: 900;
+}
+.danger{
+  padding: 10px;
+  border:2px solid #c42f2f;
+  border-radius: 10px;
+  background:#e09696;
+  color: #000;
+  font-weight: 900;
+}
