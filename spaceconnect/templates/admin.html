@@ -2,7 +2,7 @@
 {% block content %}
 <div class="admin-panel">
     <center>
-    <h1>Form Responses </h1>
+    <h1 class="admin-header">Form Responses </h1>
     <br>
     <hr>
 </center>
@@ -10,11 +10,11 @@
 
 <div class="admin-response">
     {% for post in posts %}
-    <h1>{{post.title}}</h1>
-    <br>
-    <p>{{post.content}}</p>
-    <br>
-    <small>{{post.date_posted}}</small>
+    <div class="admin-form-data">
+        <h1>{{post.title}}</h1>
+        <p>{{post.content}}</p>
+        <small>{{post.date_posted}}</small>
+    </div>
     {% endfor %}
 </div>
 </div>
