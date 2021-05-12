@@ -12,7 +12,7 @@ Intech'21 submission by Yuvraaj Narula
  <img src="https://media.discordapp.net/attachments/741244174736556076/842107860740997130/Screenshot_120.png?width=541&height=406">
  
  ```
-  Either fork it and clone or 
+  Either fork it and then clone or 
   D:\xyz_folder> git clone https://github.com/yuvraajnarula/spaceconnect.git
   D:\xyz_folder\spaceconnect>python run.py
 ```
