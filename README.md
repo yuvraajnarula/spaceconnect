@@ -1,6 +1,13 @@
 # Spaceconnect
 Intech'21 submission by Yuvraaj Narula
 
+ ```
+  Either fork it and then clone or 
+  D:\xyz_folder> git clone https://github.com/yuvraajnarula/spaceconnect.git
+  D:\xyz_folder\spaceconnect>python run.py
+```
+
+
 <h2>Website Preview</h2>
 <h4> Landing div </h4><hr>
 <img src="https://media.discordapp.net/attachments/741244174736556076/842107852524093450/Screenshot_115.png?width=541&height=406">
@@ -12,8 +19,3 @@ Intech'21 submission by Yuvraaj Narula
  <hr>
  <img src="https://media.discordapp.net/attachments/741244174736556076/842107860740997130/Screenshot_120.png?width=541&height=406">
  
- ```
-  Either fork it and then clone or 
-  D:\xyz_folder> git clone https://github.com/yuvraajnarula/spaceconnect.git
-  D:\xyz_folder\spaceconnect>python run.py
-```
