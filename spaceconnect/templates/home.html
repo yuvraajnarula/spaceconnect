@@ -13,7 +13,7 @@
           <q>To achieve infinity and beyond</q>
         </div>
   </div>
-  <div class="about">
+  <div class="about"  data-aos="fade-right" data-aos-duration="1000">
       <h1>
           About Us
       </h1>
@@ -32,7 +32,7 @@
       </ul>
       
   </div>
-  <div class="aim">
+  <div class="aim" data-aos="fade-up" data-aos-duration="1000">
       <h1>
           What's our goal?
       </h1>
@@ -58,7 +58,12 @@
   </center>
   <br>
   <br>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script src="{{url_for('static', filename='preloader.js')}}"></script>
-  <script src="{{url_for('static', filename='scroll.js')}}"></script>
+  <script>
+          AOS.init();
+
+  </script>
 
  {% endblock content %}

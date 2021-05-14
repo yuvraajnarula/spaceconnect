@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <div class="missions">
     <center>
         <h1>Missions</h1>
@@ -7,7 +9,7 @@
         <hr class="missions-hr">
     </center>
     <br>    <br>    <br>
-    <div class="mission-1">
+    <div class="mission-1" >
         <div class="about">
             <h4>
                <i>Mission 1: Soil Observation & Bomb testing</i>
@@ -29,7 +31,7 @@
     </div>
     <br>
 
-    <div class="mission-1">
+    <div class="mission-1" data-aos="zoom-in" data-aos-duration="1000">
         <div class="about">
             <h4>
                <i>Mission 2: Setting up of a base near Area-1Z2</i>
@@ -49,7 +51,7 @@
             </ul>
     </div>
     <br>
-    <div class="counter-container">
+    <div class="counter-container" data-aos="fade-up" data-aos-duration="1000">
         <h3 id="headline"><i>Mission 3</i> to be announced in: </h3>
         <br>
         <br>
@@ -64,4 +66,11 @@
         <br>
     </div>
     <script src="{{url_for('static', filename='counter.js')}}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="{{url_for('static', filename='preloader.js')}}"></script>
+    <script>
+            AOS.init();
+  
+    </script>
 {% endblock content %}
