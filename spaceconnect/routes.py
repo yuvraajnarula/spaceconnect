@@ -26,7 +26,7 @@ def register():
         user = User(username=form.username.data, email=form.email.data, password=hashed_password)
         db.session.add(user)
         db.session.commit()
-        flash('Your account has been created! You are now able to log in', 'success')
+        flash('Your account has been created! You are now able to log in')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
@@ -43,7 +43,7 @@ def login():
             next_page = request.args.get('next')
             return redirect(next_page) if next_page else redirect(url_for('home'))
         else:
-            flash('Login Unsuccessful. Please check email and password', 'danger')
+            flash('Login Unsuccessful. Please check email and password')
     return render_template('login.html', title='Login', form=form)
 
 
@@ -60,7 +60,7 @@ def apply():
         post = Post(title=form.title.data, content=form.content.data, author=current_user)
         db.session.add(post)
         db.session.commit()
-        flash('Your application submitted successfully', 'success')
+        flash('Your application submitted successfully')
         return redirect(url_for('home'))
     return render_template('apply.html', title='Induction Form',
                            form=form)
