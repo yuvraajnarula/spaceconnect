@@ -7,7 +7,7 @@ from spaceconnect.models import User
 
 
 class RegistrationForm(FlaskForm):
-    username = StringField('Username',
+    username = StringField('Name',
                            validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
@@ -40,3 +40,4 @@ class PostForm(FlaskForm):
     title = StringField('Fullname', validators=[DataRequired()])
     content = TextAreaField('Describe your abilities for the missions listed:', validators=[DataRequired()])
     submit = SubmitField('Apply')
+
