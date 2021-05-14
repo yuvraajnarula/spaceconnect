@@ -19,7 +19,7 @@ Intech'21 submission by Yuvraaj Narula
  <h4>Form response</h4> 
  <hr>
  <img src="https://media.discordapp.net/attachments/741244174736556076/842813744337387541/unknown.png?width=541&height=406">
- <i>Pin: </i> ```s8hrFymcDJ4!Hmn?```
+ <i>Pin: </i> s8hrFymcDJ4!Hmn?
  <br>
  <img src="https://media.discordapp.net/attachments/741244174736556076/842107860740997130/Screenshot_120.png?width=541&height=406">
  
