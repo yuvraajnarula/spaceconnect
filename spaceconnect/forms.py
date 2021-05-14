@@ -35,3 +35,6 @@ class PostForm(FlaskForm):
     content = TextAreaField('Describe your abilities for the missions listed:', validators=[DataRequired()])
     submit = SubmitField('Apply')
 
+class adminForm(FlaskForm):
+    password  = PasswordField('Pin', validators=[DataRequired()])
+    submit = SubmitField('Submit')

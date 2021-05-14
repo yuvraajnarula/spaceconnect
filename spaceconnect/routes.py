@@ -1,7 +1,7 @@
 
 from flask import render_template, url_for, flash, redirect, request, abort
 from spaceconnect import app, db, bcrypt
-from spaceconnect.forms import RegistrationForm, LoginForm,  PostForm
+from spaceconnect.forms import RegistrationForm, LoginForm,  PostForm , adminForm
 from spaceconnect.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 
@@ -65,8 +65,14 @@ def apply():
     return render_template('apply.html', title='Induction Form',
                            form=form)
 
-
-@app.route('/admin')
+@app.route('/admin/login' ,methods=['GET',"POST"])
+def admin_user():
+    form = adminForm()
+    if form.validate_on_submit:
+        if form.password.data == 's8hrFymcDJ4!Hmn?':
+            return redirect(url_for('admin')) 
+    return render_template('admin-form.html', form=form, title='Admin Login')
+@app.route('/admin/form-response')
 def admin():
     posts = Post.query.all()
     return render_template('admin.html', title='Form Response',posts= posts)

@@ -398,3 +398,16 @@ footer i {
   color: #000;
   font-weight: 900;
 }
+.form-4{
+  height: 22.5vh;
+  width: 32.5%;
+  margin-left: 20em;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px  rgba(0,0,0,0.5);
+  padding: 10px;
+}
+.form-4 legend {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
