@@ -38,3 +38,4 @@ class PostForm(FlaskForm):
 class adminForm(FlaskForm):
     password  = PasswordField('Pin', validators=[DataRequired()])
     submit = SubmitField('Submit')
+    
