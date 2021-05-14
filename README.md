@@ -4,7 +4,7 @@ Intech'21 submission by Yuvraaj Narula
  ```
   Either fork it and then clone or 
   D:\xyz_folder> git clone https://github.com/yuvraajnarula/spaceconnect.git
-  D:\xyz_folder>pip install -r requirements.txt
+  D:\xyz_folder\spaceconnect>pip install -r requirements.txt
   D:\xyz_folder\spaceconnect>python run.py
 ```
 
